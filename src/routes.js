@@ -50,6 +50,18 @@ const Toasts = React.lazy(() => import('./views/notifications/toasts/Toasts'))
 
 const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 
+// CLIENTS
+const Clients = React.lazy(() => import('./views/clients/Clients/Clients'))
+const ClientCreate = React.lazy(() => import('./views/clients/ClientCreate/ClientCreate'))
+
+//ASSIGNMENT
+const AssignmentList = React.lazy(() => import('./views/assignment/list/List'))
+const AssignmentCreate = React.lazy(() => import('./views/assignment/create/Create'))
+
+//TASK
+const TaskList = React.lazy(() => import('./views/task/list/List'))
+const TaskCreate = React.lazy(() => import('./views/task/create/Create'))
+
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
@@ -95,6 +107,18 @@ const routes = [
   { path: '/notifications/modals', name: 'Modals', component: Modals },
   { path: '/notifications/toasts', name: 'Toasts', component: Toasts },
   { path: '/widgets', name: 'Widgets', component: Widgets },
+
+  { path: '/clients', name: 'Clients', component: Clients, exact: true },
+  { path: '/clients/clients', name: 'Client', component: Clients },
+  { path: '/clients/client-create', name: 'Client Create', component: ClientCreate },
+
+  { path: '/assignment', name: 'Assignment', component: AssignmentList, exact: true },
+  { path: '/assignment/list', name: 'Assignment List', component: AssignmentList },
+  { path: '/assignment/create', name: 'Assignment Create', component: AssignmentCreate },
+
+  { path: '/task', name: 'Task', component: TaskList, exact: true },
+  { path: '/task/list', name: 'Task List', component: TaskList },
+  { path: '/task/create', name: 'Task Create', component: TaskCreate },
 ]
 
 export default routes

@@ -353,7 +353,7 @@ const Dashboard = () => {
                     <CCol sm={6}>
                       <div className="border-start border-start-4 border-start-warning py-1 px-3 mb-3">
                         <div className="text-medium-emphasis small">Pageviews</div>
-                        <div className="fs-5 fw-semibold">78,623</div>
+                        <div className="fs-5 fw-semibold">12,2812</div>
                       </div>
                     </CCol>
                     <CCol sm={6}>
